@@ -16,11 +16,17 @@ On iOS, App Transport Security (ATS) helps protect privacy and data integrity by
 
 Resource: Preventing Insecure Network Connections - https://developer.apple.com/documentation/security/preventing-insecure-network-connections
 ## Networking
+IPv4 uses 32-bit addresses, while IPv6 uses 128-bit addresses, providing a vastly larger address space. IPv6 was designed as a successor to IPv4 and supports a much greater number of addressable devices, which matters as phones, sensors, vehicles, and public-service systems grow. IPv6 also supports simpler address autoconfiguration. Governments need to plan networks so devices and services can communicate across IPv4 and IPv6 environments.
 
+Resource: RFC 8200: Internet Protocol, Version 6 (IPv6) Specification - https://www.rfc-editor.org/rfc/rfc8200
 ## Cybersecurity
+Prompt injection is when input manipulates a large language model (LLM) into ignoring intended instructions or producing unsafe responses. Direct injection comes from a user's prompt; indirect injection is hidden or malicious instructions in material the assistant retrieves, such as a webpage or document. Two mitigations are to treat retrieved content as untrusted and keep it separate from system instructions, and to enforce least-privilege permissions for tools and data. No single defense guarantees prevention.
 
+Resource: LLM01:2025 Prompt Injection - https://genai.owasp.org/llmrisk/llm01-prompt-injection/
 ## Data
+Anonymization irreversibly removes identifying links so a person is no longer reasonably identifiable. Pseudonymization replaces identifiers with codes but allows re-identification using separately held additional information. For chat logs, pseudonymized data generally remains personal data under the GDPR, while truly anonymous information falls outside its scope. The team should remove indirect identifiers as well as names and assess whether re-identification remains reasonably possible.
 
+Resource: Regulation (EU) 2016/679 (GDPR), Recital 26 - https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0679
 ## Misconception in My Track
 
 ## Open Question
