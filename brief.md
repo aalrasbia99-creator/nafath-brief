@@ -28,5 +28,6 @@ Anonymization irreversibly removes identifying links so a person is no longer re
 
 Resource: Regulation (EU) 2016/679 (GDPR), Recital 26 - https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0679
 ## Misconception in My Track
-
+A common misconception is that prompt injection only comes from instructions typed directly by a user. In reality, an AI assistant can also receive malicious instructions through external content, such as a webpage or file it retrieves. OWASP states: “Indirect prompt injections occur when an LLM accepts input from external sources, such as websites or files.” This is explained under “Types of Prompt Injection Vulnerabilities,” subsection “Indirect Prompt Injections.” For a government service assistant, retrieved documents should be treated as untrusted, and the model should have only the minimum permissions needed. Testing should include documents as well as chat prompts.
 ## Open Question
+How can the government assistant detect malicious instructions hidden in retrieved service documents without blocking legitimate information citizens need?
